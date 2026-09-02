@@ -1,3 +1,6 @@
 sed -e "s#= g[c+][c+]#= $CC#g" \
     -e "s#\(\$(CROSS_COMPILE)\)gcc#\1$CC#g" Makefile > _
 mv -f _ Makefile
+# from kiss
+
+make
