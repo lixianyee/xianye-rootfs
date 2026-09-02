@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+export DESTDIR=/src/rootfs/tmp/destdir
+
+./configure \
+  --prefix=/usr \
+  --syslibdir=/usr/lib
+
+make
+make install
+
